@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carte de visite – bonjour ahmed</title>
+    <meta name="description" content="Carte de visite web – bonjour ahmed : profil, motivations, liens." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <h1 class="visually-hidden">Carte de visite – bonjour ahmed</h1>
+    </header>
+
+    <main class="container" role="main">
+      <article class="card" aria-labelledby="identite-nom">
+        <header class="card__header">
+          <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/9919?s=200"
+            alt="Avatar stylisé de bonjour ahmed"
+            width="128" height="128"
+          />
+          <div class="identite">
+            <h2 id="identite-nom">bonjour ahmed</h2>
+            <p class="sous-titre">Apprenant·e Web • HTML5 / CSS3</p>
+          </div>
+        </header>
+
+        <section class="section" aria-labelledby="titre-a-propos">
+          <h3 id="titre-a-propos">À propos</h3>
+          <p>
+            Passionné par le web, je souhaite intégrer la formation Simplon pour
+            consolider mes bases en intégration et progresser vers le développement front.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="titre-motivations">
+          <h3 id="titre-motivations">Mes motivations pour rejoindre Simplon</h3>
+          <ul class="liste">
+            <li>Apprendre par la pratique et les projets concrets</li>
+            <li>Progresser rapidement sur HTML5 / js / css et bonnes pratiques</li>
+            <li>Apprendre à travailler en équipe et à collaborer</li>
+            <li>Être accompagné·e par une communauté bienveillante</li>
+            <li>Participer à des événements et des rencontres</li>
+            <li>Être guidé·e par des formateurs expérimentés</li>
+
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="titre-profils">
+          <h3 id="titre-profils">Profils & liens</h3>
+          <ul class="liens">
+            <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/kitotake" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">OpenClassrooms</a></li>
+            <li><a href="https://portfolio-v3-theta-two.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio</a></li>
+              </ul>
+        </section>
+
+        <footer class="card__footer">
+          <p>
+            📬 <a class="contact" href="mailto:prenom.nom@email.com">prenom.nom@email.com</a>
+            • 📍 Paris, France
+          </p>
+        </footer>
+      </article>
+    </main>
+    
+    <footer class="site-footer" role="contentinfo">
+      <p>© <span id="annee"></span> bonjour ahmed — Carte de visite</p>
+    </footer>
+
+    <script>
+      document.getElementById('annee').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html> 
